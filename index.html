@@ -11,32 +11,38 @@
 
 
 <body>
-    <header>
-        <nav class="h-16 w-full bg-color1">
+    <header class="h-16 w-full px-4 py-2
+     border-2 border-b-gray-400 bg-color1">
+        <nav class="flex items-center justify-between px-4 ">
             <!---logo on heading section-->
-            <div>
-                <span><i class="fa-solid fa-bolt"></i></span>
-                <span>Nexus</span>
+            <div class="h-10 w-10 flex gap-8 bg-blue-500 rounded-lg items-center px-2">
+                <span><i class="fa-solid fa-bolt text-white "></i></span>
+                <span class="text-white">Nexus</span>
             </div>
             <!---logo on heading section ends-->
 
             <!--Navbars on header begins-->
-            <ul>
+
+            <div class="text-color2">
+            <ul class="hidden md:flex gap-4 items-center justify-center px-6 ">
                 <li> <a href="#home">Home</a></li>
                 <li> <a href="#about">About</a></li>
                 <li> <a href="#services">Services</a></li>
                 <li> <a href="#contact">Contact</a></li>
+                </div>
+
+                <div class="hidden md:flex bg-blue-500 hover:bg-amber-600
+                 text-white p-2 rounded-lg font-medium">
+                 <button> <a href="#">Get Started</a></button>
+                 </div>
             </ul>
+            
             <!--Navbars on header ends-->
 
-            <!--Call to action button begins-->
-            <div>
-                <button>Get Started</button>
-            </div>
-            <!--Call to action button ends-->
 
             <!--Hamburger menu for mobile view begins-->
-            <div class="hamburger">
+            <div class="md:hidden text-white h-8 w-6 font-bold">
+                
                 <span><i class="fa-solid fa-bars"></i></span>
             </div>
             <!--Hamburger menu for mobile view ends-->
